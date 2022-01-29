@@ -1,0 +1,16 @@
+extends layout
+
+block head
+  link(rel='stylesheet', href='/stylesheets/home.style.css')
+
+block content
+  .container 
+    .card
+      - if (msg)
+        .message
+          h4= msg
+      form(action="" method='POST' enctype="multipart/form-data")
+        input(type="file" name="uploadfile" id="file" multiple)
+        input(type="submit" value="Submit" id="submit") 
+      .link
+        a(href="/photos") Check out 

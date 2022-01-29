@@ -1,0 +1,15 @@
+.nav {
+  padding: 14px 24px;
+}
+
+.nav a {
+  color: rgb(12, 9, 192);
+}
+
+.grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  height: 260px;
+}
