@@ -1,0 +1,30 @@
+.con-card {
+  margin: 20px auto;
+  max-width: 400px;
+  width: 96%;
+}
+
+.card {
+  border: 1px solid #888;
+  padding: 20px 14px;
+  border-radius: .25rem;
+}
+
+img {
+  border-radius: .25rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  background: rgb(241, 41, 41);
+  text-align: center;
+  color: #fff;
+  border-radius: .25rem;
+}
+
+.nav {
+  padding: 14px 24px;
+  color: rgb(12, 9, 192);
+}

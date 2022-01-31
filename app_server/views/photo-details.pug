@@ -1,0 +1,14 @@
+extends layout
+
+block head
+  link(rel='stylesheet', href='/stylesheets/photo-details.style.css')
+
+block content
+
+  .nav 
+    a(href="/photos") Back 
+  .con-card
+    .card 
+      img(src=`/uploads/images/${image.image_name}`, alt="display")
+      a(href=`/photos/${image.id}/delete`)
+        .btn Delete

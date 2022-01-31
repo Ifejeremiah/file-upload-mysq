@@ -7,12 +7,12 @@ block content
 
   .con-section 
     .nav 
-      ul.flex.flx-spc-btw 
-        li
-        li
-        li
-          a(href="/") Home 
+      a(href="/") Back
     .section-a.grid 
-      each image in images
-        .card 
-          img(src=`/uploads/images/${image.image_name}`, alt="display")
+      -if (images)
+        each image in images
+          .card 
+            a(href=`/photos/${image.id}`) 
+              img(src=`/uploads/images/${image.image_name}`, alt="display")
+      - if (!images)
+          h3 There are no images yet
